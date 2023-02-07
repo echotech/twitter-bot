@@ -70,7 +70,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Twitter Generator</title>
+        <title>AI Tweet Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
-          href="https://github.com/Nutlope/twitterbio"
+          href="https://github.com/echotech/twitter-bot"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Copy your current tweet, or link{" "}
+              Copy your current tweet, including link{" "}
               <span className="text-slate-500">
                 (or write a few keywords you want mentioned)
               </span>
@@ -127,7 +127,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generate your bio &rarr;
+              Generate your tweets &rarr;
             </button>
           )}
           {loading && (
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                             className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                             onClick={() => {
                               navigator.clipboard.writeText(generatedBio);
-                              toast("Bio copied to clipboard", {
+                              toast("Tweet copied to clipboard", {
                                 icon: "✂️",
                               });
                             }}
