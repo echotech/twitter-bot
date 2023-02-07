@@ -21,10 +21,10 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Funny"
-      ? `Generate 2 funny twitter bios with no hashtags and clearly labeled "1." and "2.". Make sure there is a joke in there and it's a little ridiculous. Make sure each generated bio is at max 20 words and base it on this context: ${bio}${
+      ? `Generate 2 funny tweets clearly labeled "1." and "2.". Make sure there is a joke in there and it's a little ridiculous. Make sure each generated tweet is based context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
-      : `Generate 2 ${vibe} twitter bios with no hashtags and clearly labeled "1." and "2.". Make sure each generated bio is at least 14 words and at max 20 words and base them on this context: ${bio}${
+      : `Generate 2 ${vibe} tweets clearly labeled "1." and "2.". Make sure each generated tweet is based on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`;
 
@@ -86,9 +86,8 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate your next Twitter bio in seconds
+          Generate your tweets in seconds
         </h1>
-        <p className="text-slate-500 mt-5">18,167 bios generated so far.</p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -99,9 +98,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Copy your current bio{" "}
+              Copy your current tweet, or link{" "}
               <span className="text-slate-500">
-                (or write a few sentences about yourself)
+                (or write a few keywords you want mentioned)
               </span>
               .
             </p>
@@ -153,7 +152,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated bios
+                      Your generated tweets
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
