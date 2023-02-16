@@ -22,14 +22,6 @@ class MyDocument extends Document {
             name="twitter:description"
             content="Generate your tweet content in seconds."
           />
-          <meta
-            property="og:image"
-            content="https://twitterbio.com/og-image.png"
-          />
-          <meta
-            name="twitter:image"
-            content="https://twitterbio.com/og-image.png"
-          />
         </Head>
         <body>
           <Main />
