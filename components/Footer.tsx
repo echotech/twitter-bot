@@ -22,7 +22,7 @@ export default function Footer() {
         >
           Vercel Edge Functions. 
         </a>
-        <br>
+        <br />
           Inspired by 
          <a
           href="https://github.com/Nutlope/twitterbio"
