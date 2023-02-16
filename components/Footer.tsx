@@ -22,13 +22,13 @@ export default function Footer() {
         >
           Vercel Edge Functions. 
         </a>
-         Inspired by 
+          Inspired by 
          <a
           href="https://github.com/Nutlope/twitterbio"
           target="_blank"
           rel="noreferrer"
           className="font-bold hover:underline transition underline-offset-2"
-          >Nutlope</a>
+          > Nutlope</a>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
