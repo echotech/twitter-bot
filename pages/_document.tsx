@@ -10,13 +10,12 @@ class MyDocument extends Document {
             name="description"
             content="Generate your tweet content in seconds."
           />
-          <meta property="og:site_name" content="twitterbio.com" />
+          <meta property="og:site_name" content="gptweet.co" />
           <meta
             property="og:description"
             content="Generate your tweet content in seconds."
           />
           <meta property="og:title" content="AI Tweet Writer" />
-          <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="AI Tweet Writer" />
           <meta
             name="twitter:description"
