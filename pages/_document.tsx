@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-
 class MyDocument extends Document {
   render() {
     return (
@@ -8,18 +7,27 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Generate your tweet content in seconds."
+            content="Generate your tweets with AI in seconds."
           />
           <meta property="og:site_name" content="gptweet.co" />
           <meta
             property="og:description"
-            content="Generate your tweet content in seconds."
+            content="Generate your tweets with AI in seconds."
           />
           <meta property="og:title" content="AI Tweet Writer" />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="AI Tweet Writer" />
           <meta
             name="twitter:description"
-            content="Generate your tweet content in seconds."
+            content="Generate your tweets with AI in seconds."
+          />
+          <meta
+            property="og:image"
+            content="https://twitterbio.com/og-image.png"
+          />
+          <meta
+            name="twitter:image"
+            content="https://twitterbio.com/og-image.png"
           />
         </Head>
         <body>
@@ -30,5 +38,4 @@ class MyDocument extends Document {
     );
   }
 }
-
 export default MyDocument;
